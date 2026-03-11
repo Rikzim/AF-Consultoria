@@ -33,12 +33,6 @@ const Cta: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-bg-cream/10 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-bg-cream animate-pulse" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-bg-cream/70">
-                Fale Conosco
-              </span>
-            </div>
 
             <h2
               className="text-4xl md:text-5xl lg:text-6xl text-bg-cream leading-[1.1] tracking-tight mb-8"
@@ -71,30 +65,30 @@ const Cta: React.FC = () => {
             {/* Contact info row */}
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-bg-cream/10 flex items-center justify-center text-bg-cream/60">
+                <div className="w-10 h-10 rounded-xl bg-bg-cream/10 flex items-center justify-center text-bg-cream/60 shrink-0">
                   <FiPhone className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="whitespace-nowrap">
                   <p className="text-[10px] uppercase tracking-widest text-bg-cream/30 font-bold">Telefone</p>
                   <p className="text-sm text-bg-cream/80 font-semibold">(69) 3421-XXXX</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-bg-cream/10 flex items-center justify-center text-bg-cream/60">
+                <div className="w-10 h-10 rounded-xl bg-bg-cream/10 flex items-center justify-center text-bg-cream/60 shrink-0">
                   <FiMail className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="whitespace-nowrap">
                   <p className="text-[10px] uppercase tracking-widest text-bg-cream/30 font-bold">E-mail</p>
                   <p className="text-sm text-bg-cream/80 font-semibold">contato@afconsultoria.com</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-bg-cream/10 flex items-center justify-center text-bg-cream/60">
+                <div className="w-10 h-10 rounded-xl bg-bg-cream/10 flex items-center justify-center text-bg-cream/60 shrink-0">
                   <FiMapPin className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="whitespace-nowrap">
                   <p className="text-[10px] uppercase tracking-widest text-bg-cream/30 font-bold">Local</p>
                   <p className="text-sm text-bg-cream/80 font-semibold">Ji-Paraná, RO</p>
                 </div>
@@ -108,7 +102,7 @@ const Cta: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative lg:translate-x-6"
           >
             {/* Main card */}
             <div className="bg-accent rounded-3xl p-10 md:p-14 relative overflow-hidden">

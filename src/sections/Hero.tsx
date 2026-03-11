@@ -44,21 +44,6 @@ const Hero: React.FC = () => {
             style={{ y: textY }}
             className="order-2 lg:order-1"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
-                style={{ backgroundColor: 'rgba(79,119,45,0.12)' }}
-              >
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
-                  Licenciamento Ambiental
-                </span>
-              </div>
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -183,7 +168,7 @@ const Hero: React.FC = () => {
               className="absolute -top-4 -right-4 w-20 h-20 rounded-2xl bg-accent flex items-center justify-center shadow-xl animate-float"
             >
               <div className="text-center">
-                <span className="text-lg font-extrabold text-bg-cream leading-none block" style={{ fontFamily: "'DM Serif Display', serif" }}>AF</span>
+                <span className="text-lg font-extrabold text-bg-cream leading-none block" style={{ fontFamily: "'DM Serif Display', serif" }}>AJ</span>
                 <span className="text-[5px] font-bold tracking-[0.15em] text-bg-cream/50 uppercase">Ambiental</span>
               </div>
             </motion.div>

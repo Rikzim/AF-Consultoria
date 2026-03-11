@@ -75,20 +75,6 @@ const WhatWeDo: React.FC = () => {
       <div className="relative z-10 px-5 md:px-12 max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 md:mb-24 max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-bg-cream" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-bg-cream/70">
-                Nossos Serviços
-              </span>
-            </div>
-          </motion.div>
-
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -122,38 +108,38 @@ const WhatWeDo: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              className="group relative bg-accent-soft/80 border border-bg-cream/5 rounded-3xl p-8 md:p-10 flex flex-col justify-between min-h-[320px] md:min-h-[360px] overflow-hidden transition-all duration-500 hover:border-primary/30 hover:bg-primary/10 cursor-pointer"
+              className="group relative bg-bg-cream border border-bg-cream/5 rounded-3xl p-8 md:p-10 flex flex-col justify-between min-h-[320px] md:min-h-[360px] overflow-hidden transition-all duration-500 hover:border-primary/30 cursor-pointer"
             >
               {/* Top row: category + icon */}
               <div className="flex items-start justify-between mb-8">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-2xl bg-primary/15 text-primary flex items-center justify-center group-hover:bg-bg-cream group-hover:text-accent transition-all duration-500">
+                  <div className="w-12 h-12 rounded-2xl bg-accent text-bg-cream flex items-center justify-center group-hover:accent group-hover:text-bg-cream transition-all duration-500">
                     {service.icon}
                   </div>
-                  <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-bg-cream/30 group-hover:text-bg-cream/60 transition-colors duration-500">
+                  <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-bg-accent group-hover:text-bg-accent/60 transition-colors duration-500">
                     {service.category}
                   </span>
                 </div>
 
-                <div className="w-10 h-10 rounded-full border border-bg-cream/10 flex items-center justify-center text-bg-cream/20 group-hover:border-primary group-hover:text-primary group-hover:bg-primary/10 transition-all duration-500 group-hover:rotate-45">
+                <div className="w-10 h-10 rounded-full border border-bg-accent/10 flex items-center justify-center text-accent group-hover:border-primary group-hover:text-primary group-hover:bg-primary/10 transition-all duration-500 group-hover:rotate-45">
                   <FiArrowUpRight className="w-4 h-4" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="mt-auto">
-                <h3 className="text-2xl md:text-3xl text-bg-cream leading-[1.15] tracking-tight mb-4 group-hover:text-bg-cream transition-colors"
+                <h3 className="text-2xl md:text-3xl text-accent leading-[1.15] tracking-tight mb-4 group-hover:text-accent transition-colors"
                   style={{ fontFamily: "'DM Serif Display', serif" }}
                 >
                   {service.title}
                 </h3>
-                <p className="text-sm text-bg-cream/40 leading-relaxed font-medium group-hover:text-bg-cream/60 transition-colors duration-500 max-w-sm">
+                <p className="text-sm text-bg-accent/40 leading-relaxed font-medium group-hover:text-accent transition-colors duration-500 max-w-sm">
                   {service.description}
                 </p>
               </div>
 
               {/* Large background number */}
-              <span className="absolute -bottom-4 -right-2 text-[10rem] font-black tracking-tighter text-bg-cream/[0.03] group-hover:text-bg-cream/[0.06] transition-colors duration-700 select-none pointer-events-none leading-none"
+              <span className="absolute -bottom-4 -right-2 text-[10rem] font-black tracking-tighter text-accent/[0.10] group-hover:text-bg-cream/[0.06] transition-colors duration-700 select-none pointer-events-none leading-none"
                 style={{ fontFamily: "'DM Serif Display', serif" }}
               >
                 {service.id}

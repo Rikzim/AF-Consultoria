@@ -42,20 +42,6 @@ const About: React.FC = () => {
       <div className="relative z-10 px-5 md:px-12 max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 md:mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/8 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary">
-                Quem Somos
-              </span>
-            </div>
-          </motion.div>
-
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -84,35 +70,11 @@ const About: React.FC = () => {
             <p className="text-xl md:text-2xl font-medium leading-[1.55] text-accent/90 mb-8"
               style={{ fontFamily: "'DM Serif Display', serif" }}
             >
-              A <strong className="text-primary">AF Assessoria & Projetos Ambientais</strong> foi
+              A <strong className="text-primary">AJ Assessoria Ambiental</strong> foi
               uma das pioneiras no ramo ambiental no estado de Rondônia, iniciando seus
-              trabalhos em <strong>1987</strong> — muito antes da primeira normatização oficial
+              trabalhos em <strong>1987</strong> muito antes da primeira normatização oficial
               da atividade.
             </p>
-
-            <div className="space-y-5 text-base text-text-body/65 leading-relaxed">
-              <p>
-                Os primeiros projetos de Plano de Manejo Florestal (PMF) foram realizados
-                antes mesmo da famosa <strong className="text-accent/80">Portaria 048/1995</strong>,
-                antecipando o que viria a se tornar referência regulatória para o setor.
-              </p>
-              <p>
-                Inicialmente focada em implantação de projetos de Plano de Manejo (PMF),
-                Levantamentos Circunstanciados (LC) e assessoria a empresas do ramo florestal,
-                a AF expandiu gradualmente sua atuação acompanhando a evolução do cenário
-                ambiental brasileiro.
-              </p>
-              <p>
-                Com as constantes transformações na legislação ambiental e investimento
-                contínuo em especializações, passamos a atuar também com{" "}
-                <strong className="text-accent/80">
-                  licenciamento ambiental e cadastros ambientais
-                </strong>{" "}
-                de empresas de diversos setores — do ramo florestal à agroindústria, mineração
-                e muito mais.
-              </p>
-            </div>
-
             {/* Bottom highlight phrase */}
             <div className="mt-10 pt-8 border-t border-accent/10">
               <p className="text-lg md:text-xl font-medium text-accent leading-relaxed"

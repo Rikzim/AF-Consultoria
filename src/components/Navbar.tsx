@@ -51,12 +51,13 @@ const Navbar: React.FC = () => {
               <span className={`font-extrabold text-xl tracking-tight leading-none transition-colors duration-700 ${
                 scrolled ? 'text-bg-cream' : 'text-accent'
               }`} style={{ fontFamily: "'DM Serif Display', serif" }}>
-                AF
+                AJ
               </span>
               <span className={`text-[8px] font-bold tracking-[0.25em] uppercase leading-none mt-0.5 transition-colors duration-700 ${
                 scrolled ? 'text-bg-cream/60' : 'text-primary'
               }`}>
-                Consultoria
+                ASSESSORIA
+                AMBIENTAL
               </span>
             </div>
           </a>
