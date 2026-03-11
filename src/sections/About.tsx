@@ -51,7 +51,7 @@ const About: React.FC = () => {
             style={{ fontFamily: "'DM Serif Display', serif" }}
           >
             Pioneiros em gestão{" "}
-            <span className="text-primary italic">ambiental</span>
+            <span className="text-primary italic">Ambiental</span>
             <br />
             em Rondônia
           </motion.h2>
