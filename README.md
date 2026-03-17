@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# AJ Assessoria Ambiental
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a modern **landing page for an environmental advisory and consultancy firm**. The project is designed to showcase specialized services, institutional history, and project success rates in the environmental management and licensing sector.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is built with a modern frontend stack focused on performance, type safety, and fluid animations:
 
-## React Compiler
+* **React 19 & TypeScript**: Core framework and type-safe development.
+* **Vite**: Next-generation frontend tooling for fast builds and HMR.
+* **Tailwind CSS (v4)**: Utility-first CSS framework for modern, responsive styling.
+* **Framer Motion**: Powering high-quality scroll animations and micro-interactions.
+* **Cloudflare Wrangler**: Integration for seamless deployment and hosting via Cloudflare.
+* **React Icons & Lucide**: Scalable vector icons for the UI.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Project Structure
 
-## Expanding the ESLint configuration
+The codebase follows a modular structure for better maintainability:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* `src/components/`: Reusable UI elements like `Navbar`, `Footer`, and `Marquee`.
+* `src/sections/`: Main landing page sections such as `Hero`, `About`, and `WhatWeDo`.
+* `src/App.tsx`: Main entry point that orchestrates the page layout.
+* `public/`: Static assets including brand logos and high-quality imagery.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Node.js (latest LTS recommended)
+* npm or yarn
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone the repository and install dependencies:**
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+3.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+4.  **Deploy to Cloudflare:**
+    ```bash
+    npm run deploy
+    ```
+
+---
